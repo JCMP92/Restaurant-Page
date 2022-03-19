@@ -10,33 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contactPage.js":
+/*!****************************!*\
+  !*** ./src/contactPage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactInit\": () => (/* binding */ contactInit)\n/* harmony export */ });\n/* harmony import */ var _pageTitles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageTitles */ \"./src/pageTitles.js\");\n\r\n\r\n\r\nconst contactInit = (() => {\r\n    const container =  document.getElementById('content');\r\n\r\n    //Page title\r\n    const menuTitle = (0,_pageTitles__WEBPACK_IMPORTED_MODULE_0__.pageHeader)('Contacto')\r\n    container.appendChild(menuTitle);\r\n\r\n})\r\n();\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/contactPage.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navBar */ \"./src/navBar.js\");\n/* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuPage */ \"./src/menuPage.js\");\n\r\n// import { pageInit } from \"./homePage\";\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/menuPage.js":
-/*!*************************!*\
-  !*** ./src/menuPage.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuInit\": () => (/* binding */ menuInit)\n/* harmony export */ });\n/* harmony import */ var _menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuSection&ItemsCreators */ \"./src/menuSection&ItemsCreators.js\");\n/* harmony import */ var _pageTitles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pageTitles */ \"./src/pageTitles.js\");\n\r\n\r\n\r\n\r\n\r\nconst menuInit = (() =>{\r\n    const container =  document.getElementById('content');\r\n\r\n    //Page title\r\n    const menuTitle = (0,_pageTitles__WEBPACK_IMPORTED_MODULE_1__.pageHeader)('Menú')\r\n    container.appendChild(menuTitle);\r\n    \r\n    // First Section\r\n    const firstSection = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuSection)('Bebidas calientes');\r\n    container.appendChild(firstSection);\r\n\r\n    //Menu elements for their respective sections, we are appending them to the variable that we declared as firstSection.\r\n    const cafeAmericano = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('Café Americano', 'Lorem ipsum dolor', '35.00');\r\n    firstSection.appendChild(cafeAmericano);    \r\n    const cappuccino = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('Cappuccino', 'Lorem ipsum dolor', '44.00');\r\n    firstSection.appendChild(cappuccino);\r\n    const moka = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('Moka', 'Lorem ipsum dolor', '50.00');\r\n    firstSection.appendChild(moka);  \r\n    \r\n    // Second Section\r\n    const secondSection = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuSection)('Métodos de extracción');\r\n    container.appendChild(secondSection);\r\n\r\n    //Menu elements for their respective sections, we are appending them to the variable that we declared as secondSection.\r\n    const chemex = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('Chemex', 'Lorem ipsum dolor', '60.00');\r\n    secondSection.appendChild(chemex); \r\n    const v60 = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('V60', 'Lorem ipsum dolor', '60.00');\r\n    secondSection.appendChild(v60); \r\n    const aeropress = (0,_menuSection_ItemsCreators__WEBPACK_IMPORTED_MODULE_0__.menuItem)('Aeropress', 'Lorem ipsum dolor', '60.00');\r\n    secondSection.appendChild(aeropress); \r\n\r\n})\r\n();\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/menuPage.js?");
-
-/***/ }),
-
-/***/ "./src/menuSection&ItemsCreators.js":
-/*!******************************************!*\
-  !*** ./src/menuSection&ItemsCreators.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuItem\": () => (/* binding */ menuItem),\n/* harmony export */   \"menuSection\": () => (/* binding */ menuSection)\n/* harmony export */ });\n \r\n\r\n const menuSection = (menuSubText) => {\r\n\r\n\r\n    const mSection = document.createElement('section');\r\n        mSection.classList.add('sections');\r\n\r\n    const subTitle = document.createElement('h3');\r\n    subTitle.textContent = menuSubText;\r\n\r\n    mSection.appendChild(subTitle);\r\n\r\n    return mSection;\r\n\r\n\r\n };\r\n\r\n const menuItem = (itemName, itemDescription, itemPrice) => {\r\n\r\n    const menuItemContent = document.createElement('div');\r\n        menuItemContent.classList.add('menu-item');\r\n\r\n    const nameContainer = document.createElement('div');\r\n    const foodName = document.createElement('h4');\r\n        foodName.textContent = itemName;\r\n    const foodDescription = document.createElement('p');\r\n        foodDescription.textContent = itemDescription;\r\n    \r\n    nameContainer.appendChild(foodName);\r\n    nameContainer.appendChild(foodDescription);\r\n\r\n    const priceContainer = document.createElement('div');\r\n    const price = document.createElement('h5');\r\n        price.textContent = `$ ${itemPrice} MXN.`\r\n    \r\n    priceContainer.appendChild(price);\r\n\r\n    menuItemContent.appendChild(nameContainer);\r\n    menuItemContent.appendChild(priceContainer);\r\n\r\n    return menuItemContent;\r\n\r\n\r\n }\r\n\r\n\r\n\r\n\r\n\r\n \n\n//# sourceURL=webpack://restaurant/./src/menuSection&ItemsCreators.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navBar */ \"./src/navBar.js\");\n/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contactPage */ \"./src/contactPage.js\");\n\r\n// import { pageInit } from \"./homePage\";\r\n// import { menuInit } from \"./menuPage\";\r\n\r\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
