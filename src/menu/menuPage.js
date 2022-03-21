@@ -1,7 +1,7 @@
 'use strict';
 
-import { menuSection, menuItem } from "./menuSection&ItemsCreators";
-import { pageHeader } from "./pageTitles";
+import { menuSection, menuItem } from "./menu-dependencies/menuSection&ItemsCreators";
+import { pageHeader } from "../general-dependencies/pageTitles";
 
 const menuInit = (() =>{
     const container =  document.getElementById('content');

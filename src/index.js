@@ -1,4 +1,4 @@
-import { navBar } from "./navBar";
-// import { pageInit } from "./homePage";
-// import { menuInit } from "./menuPage";
-import { contactInit } from "./contactPage";
+import { navBar } from "./navigation bar/navBar";
+import { pageInit } from "./home/homePage";
+import { menuInit } from "./menu/menuPage";
+import { contactInit } from "./contact/contactPage";

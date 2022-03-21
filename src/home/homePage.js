@@ -3,7 +3,7 @@
 const pageInit = (() =>{
     const container = document.getElementById('content');
     const mainImage = document.createElement('img');
-        mainImage.src = "../images/coffee-6632533_1920.jpg";
+        mainImage.src = "../images/mainImage/coffee-6632533_1920.jpg";
     const title = document.createElement('h1');
         title.classList.add('title');
         title.textContent = 'Kffto';

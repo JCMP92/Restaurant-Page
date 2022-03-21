@@ -9,7 +9,7 @@ const contactCard = (title, phoneNumber) => {
     const cardContent = document.createElement('p');
         cardContent.classList.add('card-content');
         cardContent.innerHTML = `¿En que podemos ayudarte? <br />
-                                ${phoneNumber}`
+        <i class="fab fa-whatsapp"></i> ${phoneNumber}`
                                 
     cardContainer.appendChild(cardTitle);
     cardContainer.appendChild(cardContent);

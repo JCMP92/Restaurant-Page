@@ -1,7 +1,7 @@
 'use strict';
-import { pageHeader } from "./pageTitles";
-import { contactCard } from "./contactNumber";
-import { socialMedia } from "./socialMediaCreator";
+import { pageHeader } from "../general-dependencies/pageTitles";
+import { contactCard } from "./contact-dependencies/contactNumber";
+import { socialMedia } from "./contact-dependencies/socialMediaCreator";
 
 const contactInit = (() => {
     const container =  document.getElementById('content');
