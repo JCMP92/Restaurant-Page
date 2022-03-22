@@ -1,0 +1,35 @@
+@import '../vars/variable.scss';
+
+.id-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: white;
+
+    .first-part-title{
+        color: $green-kffto;
+        text-shadow: 2px 2px 4px  #000;
+        font-size: 6rem
+    }
+
+}
+
+.txt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: $gray-kffto;
+
+    .first-part-text{
+        color: white;
+        text-shadow: 2px 2px 4px  #000;
+        font-size: 2rem
+    }
+}

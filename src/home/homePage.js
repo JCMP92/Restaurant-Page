@@ -2,6 +2,10 @@
 
 const pageInit = (() =>{
     const container = document.getElementById('content');
+    const homeContainer = document.createElement('div');
+        homeContainer.classList.add('hm-container');
+    container.appendChild(homeContainer);  
+
     const textDiv = document.createElement('div');
         textDiv.classList.add('text-container');
     const title = document.createElement('h1');
@@ -14,7 +18,7 @@ const pageInit = (() =>{
     textDiv.appendChild(title);
     textDiv.appendChild(slogan);
     
-    container.appendChild(textDiv);
+    homeContainer.appendChild(textDiv);
 })
 ();
 
