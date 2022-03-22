@@ -6,22 +6,22 @@ const navBar =(() =>{
     //Home button or "Inicio"
     const home = document.createElement('button');
     home.classList.add('nav-btn');
-    home.textContent = 'Kffto';
+    home.textContent = 'KFFTO';
 
     //About us button
     const aboutUs = document.createElement('button');
     aboutUs.classList.add('nav-btn');
-    aboutUs.textContent = 'Quienes somos';
+    aboutUs.textContent = 'QUIENES SOMOS';
 
     //Menu button
     const menu = document.createElement('button');
     menu.classList.add('nav-btn');
-    menu.textContent = 'Menú';
+    menu.textContent = 'MENÚ';
 
     //Contact button
     const contact = document.createElement('button');
     contact.classList.add('nav-btn');
-    contact.textContent = 'Contacto';
+    contact.textContent = 'CONTACTO';
 
 
 
