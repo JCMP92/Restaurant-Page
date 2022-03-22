@@ -1,0 +1,24 @@
+@import '../vars/variable.scss';
+
+.mnu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: white;
+
+    .sections{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        min-width: 300px;
+        background-color: beige;
+    }
+}
+
+.mnu-content{
+    display: flex;
+}
