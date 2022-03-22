@@ -1,0 +1,23 @@
+@import "../mixins/mixins.scss";
+
+#navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: clamp(50px, 10vh, 100px);
+    justify-content: flex-end;
+    background-color: black;
+    
+    button{
+        width: clamp(80px, 20vh, 200px);
+        height: clamp(50px, 10vh, 100px);
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+
+    button:hover{
+        @include click-button(); 
+        background-color: rgb(116, 28, 28);
+    }
+}
