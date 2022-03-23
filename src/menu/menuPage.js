@@ -27,7 +27,8 @@ const menuInit = (() =>{
     container.appendChild(menuContainer);
 
     //Menu title
-    const menuTitleDrink = pageHeader('Bebidas')
+    const menuTitleDrink = pageHeader('Bebidas');
+        menuTitleDrink.classList.add('mnu-drink-title');
     titleContent.appendChild(menuTitleDrink);
     
     // First Section
@@ -83,7 +84,7 @@ const menuInit = (() =>{
     frthSection.appendChild(special); 
     const tuna = menuItem('Atún', 'Lorem ipsum dolor', '45.00');
     frthSection.appendChild(tuna); 
-    const veggie = menuItem('Cold Brew', 'Lorem ipsum dolor', '45.00');
+    const veggie = menuItem('Veggie', 'Lorem ipsum dolor', '45.00');
     frthSection.appendChild(veggie);   
     
     // Fifth Section

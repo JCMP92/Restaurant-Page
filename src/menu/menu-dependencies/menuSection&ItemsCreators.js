@@ -5,12 +5,13 @@
 
     const mSection = document.createElement('section');
         mSection.classList.add('sections');
-
+    const subTDiv = document.createElement('div');
+        subTDiv.classList.add('mnu-subtitle');
     const subTitle = document.createElement('h3');
-    subTitle.textContent = menuSubText;
+        subTitle.textContent = menuSubText;
 
-    mSection.appendChild(subTitle);
-
+    subTDiv.appendChild(subTitle);
+    mSection.appendChild(subTDiv);
     return mSection;
 
 
