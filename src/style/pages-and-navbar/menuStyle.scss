@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding-top: 150px;
+    height: auto;
     width: 100vw;
     max-width: 100%;
     background-color: white;
@@ -21,4 +22,12 @@
 
 .mnu-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-content-two{
+    .mnu-food-title{
+        margin-top: 100px;
+    }
 }
