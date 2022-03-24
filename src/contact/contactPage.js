@@ -3,7 +3,7 @@ import { pageHeader } from "../general-dependencies/pageTitles";
 import { contactCard } from "./contact-dependencies/contactNumber";
 import { socialMedia } from "./contact-dependencies/socialMediaCreator";
 
-const contactInit = (() => {
+const contactInit = () => {
     const container =  document.getElementById('content');
     const contactContainer = document.createElement('div');
         contactContainer.classList.add('contact-container');
@@ -33,8 +33,7 @@ const contactInit = (() => {
     mediaContainer.appendChild( myMedia);
     contactContainer.appendChild(mediaContainer);
 
-})
-();
+};
 
 export{
     contactInit

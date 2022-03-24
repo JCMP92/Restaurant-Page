@@ -1,6 +1,6 @@
 'use strict';
 
-const pageInit = (() =>{
+const pageInit = () =>{
     const container = document.getElementById('content');
     const homeContainer = document.createElement('div');
         homeContainer.classList.add('hm-container');
@@ -19,8 +19,7 @@ const pageInit = (() =>{
     textDiv.appendChild(slogan);
     
     homeContainer.appendChild(textDiv);
-})
-();
+};
 
 export {
     pageInit

@@ -1,7 +1,7 @@
 'use strict';
 import { bigTitle, textDescription  } from "./whoWe-dependencies/titleCreator&text";
 
-const identityInit = (() => {
+const identityInit = () => {
     const container =  document.getElementById('content');
     const identContainer = document.createElement('div');
         identContainer.classList.add('id-container');
@@ -19,8 +19,7 @@ const identityInit = (() => {
     textContainer.appendChild(firstText);
 
     container.appendChild(textContainer);
-})
-();
+};
 
 export{
     identityInit

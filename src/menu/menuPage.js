@@ -3,7 +3,7 @@
 import { menuSection, menuItem } from "./menu-dependencies/menuSection&ItemsCreators";
 import { pageHeader } from "../general-dependencies/pageTitles";
 
-const menuInit = (() =>{
+const menuInit = () =>{
     const container =  document.getElementById('content');
     const menuContainer = document.createElement('div');
         menuContainer.classList.add('mnu-container');
@@ -98,8 +98,7 @@ const menuInit = (() =>{
     fifthSection.appendChild(brownie); 
     const pie = menuItem('Tartas', 'Lorem ipsum dolor', '45.00');
     fifthSection.appendChild(pie);  
-})
-();
+};
 
 export{
     menuInit
