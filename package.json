@@ -1,7 +1,6 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
@@ -12,6 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.49.9",
@@ -25,5 +27,14 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCMP92/Restaurant-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JCMP92/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/JCMP92/Restaurant-Page#readme",
+  "description": ""
 }
