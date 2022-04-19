@@ -4,6 +4,13 @@ import { menuSection, menuItem } from "./menu-dependencies/menuSection&ItemsCrea
 import { pageHeader } from "../general-dependencies/pageTitles";
 
 const menuInit = () =>{
+    
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+       });
+
     const container =  document.getElementById('content');
     const menuContainer = document.createElement('div');
         menuContainer.classList.add('mnu-container');
